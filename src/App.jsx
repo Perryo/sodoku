@@ -1,18 +1,9 @@
 import React  from 'react';
 import './App.css'
 import BigBox, {makeBox} from './BigBox'
+import {getPuzzle} from "./puzzleCreator";
 
-const puzzle = [
-    [4, '',6, 2, 7, 8, '','',''],
-    [7, 3, 5,'', 9, 6, 2, '',''],
-    [8,1,'',5,4,'',7,9,''],
-    ['',6,2,'','','',1,'',''],
-    [4,'',3,'',6,1,'','',''],
-    ['','','',4,'','','','',7],
-    ['','','','',1,7,6,'',9],
-    [3,'','','',5,'','','',''],
-    [6,'','','','',4,2,'',5]
-]
+const puzzle = getPuzzle()
 const splitPuzzle = makeBox(puzzle)
 const puzzleCopy = makeBox(puzzle)
 function App() {
