@@ -1,8 +1,28 @@
-# React + Vite
+# Sudoku
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Displays a given Sudoku puzzle and informs the user if the move they made is valid.
 
-Currently, two official plugins are available:
+A puzzle is ingested in the format:
+```javascript
+[
+    [4, '',6, 2, 7, 8, '','',''],
+    [7, 3, 5,'', 9, 6, 2, '',''],
+    [8,1,'',5,4,'',7,9,''],
+    ['',6,2,'','','',1,'',''],
+    [4,'',3,'',6,1,'','',''],
+    ['','','',4,'','','','',7],
+    ['','','','',1,7,6,'',9],
+    [3,'','','',5,'','','',''],
+    [6,'','','','',4,2,'',5]
+]
+```
+Where each row signifies a "box" of the sudoku puzzle. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Therefore the first index would represent:
+
+| 4   |  _  | 6   |
+| :-: | :-: | :-: |
+| 2   |  7  | 8   |
+|  _  |  _  |  _  |
+
+
