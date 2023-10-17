@@ -2,6 +2,9 @@
 
 Displays a given Sudoku puzzle and informs the user if the move they made is valid.
 
+<img width="669" alt="Screenshot 2023-10-17 at 9 28 57 AM" src="https://github.com/Perryo/sudoku/assets/9117438/0a4e220d-6db0-4caa-83a4-1df7c2922744">
+
+
 A puzzle is ingested in the format:
 ```javascript
 [
@@ -24,5 +27,6 @@ Therefore the first index would represent:
 | :-: | :-: | :-: |
 | 2   |  7  | 8   |
 |  _  |  _  |  _  |
+
 
 
